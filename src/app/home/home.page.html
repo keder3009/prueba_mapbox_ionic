@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Mapbox Navigation
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="display: flex;padding:16px">
+    <ion-input #latRef placeholder="Enter the lat" value="3.425906200092204" style="margin-right: 8px;"></ion-input>
+    <ion-input #lngRef placeholder="Enter the lng" value="-76.50541099898318"></ion-input>
+  </div>
+
+  <div style="display: flex;align-items: center;justify-content: center;">
+    <ion-button color="primary" (click)="setDirection(latRef.value, lngRef.value)">Set Direction</ion-button>
+  </div>
+</ion-content>
